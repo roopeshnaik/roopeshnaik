@@ -1,0 +1,4 @@
+name: umami
+recipe: drupal8
+config:
+  webroot: .
