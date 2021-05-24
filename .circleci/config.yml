@@ -160,7 +160,7 @@ jobs:
       # Deploy to Pantheon
       - run:
           name: deploy to Pantheon
-          command: ./.ci/deploy/pantheon/dev-multidev
+          command: chmod +x ./.ci/deploy/pantheon/dev-multidev
 
   behat_test:
     <<: *defaults
@@ -183,18 +183,18 @@ jobs:
           # prior to running Behat tests. This is useful to reset the multidev
           # environment to the previous state after Behat tests have run.
           name: prepare for Behat testing
-          command: ./.ci/test/behat/initialize
+          command: chmod +x ./.ci/test/behat/initialize
 
       - run:
           name: run acceptance tests with Behat
-          command: ./.ci/test/behat/run
+          command: chmod +x ./.ci/test/behat/run
 
       - run:
           # Uncomment line 13 in .ci/test/behat/cleanup to restore a backup
           # after running Behat tests. This is useful to reset the multidev
           # environment to the previous state after Behat tests have run.
           name: clean up after Behat
-          command: ./.ci/test/behat/cleanup
+          command: chmod +x ./.ci/test/behat/cleanup
           when: always
 
       - save_cache:
@@ -225,7 +225,7 @@ jobs:
 
       - run:
           name: visual regression test
-          command: ./.ci/test/visual-regression/run
+          command: chmod +x ./.ci/test/visual-regression/run
 
       - store_artifacts:
           path: /tmp/artifacts
@@ -256,11 +256,11 @@ workflows:
     jobs:
       - configure_env_vars
       - static_tests
-      # - build_php
+      - build_php
       - deploy_to_pantheon:
           requires:
-            # - static_tests
-            # - build_php
+            - static_tests
+            - build_php
       - visual_regression_test:
           requires:
             - configure_env_vars
@@ -272,7 +272,7 @@ workflows:
       - behat_test:
           requires:
             - deploy_to_pantheon
-            # - visual_regression_test
+            - visual_regression_test
 
   scheduled_update_check:
     triggers:
