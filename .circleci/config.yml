@@ -96,7 +96,7 @@ jobs:
 
       - run:
           name: run static tests
-          command: sh ./.ci/test/static/run
+          command: ./.ci/test/static/run
 
       - save_cache:
           key: composer-cache-{{ checksum "composer.lock" }}
