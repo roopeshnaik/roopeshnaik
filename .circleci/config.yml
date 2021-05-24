@@ -92,7 +92,7 @@ jobs:
           # Set TERMINUS_ENV and related environment variables.
           # https://github.com/pantheon-systems/docker-build-tools-ci/blob/6.x/scripts/set-environment
           name: setup-environment-vars
-          command: /build-tools-ci/scripts/set-environment
+          command: chmod +x /build-tools-ci/scripts/set-environment
 
       - run:
           name: run static tests
