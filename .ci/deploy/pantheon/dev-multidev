@@ -8,20 +8,12 @@ set -eo pipefail
 # Otherwise a multidev environment is used.
 #
 
-echo "Which version of terminus"
-terminus -V
-
-echo "Try to clear credentials"
-terminus -n build:credentials:clear
-
 # Authenticate with Terminus
 terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 
 # Use for debugging
 echo "Who am I in Terminus"
 terminus whoami
-
-echo "$CI_BRANCH"
 
 # Prepare for Pantheon
 composer run prepare-for-pantheon
