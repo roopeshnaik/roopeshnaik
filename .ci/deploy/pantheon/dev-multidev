@@ -13,7 +13,6 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 
 # Prepare for Pantheon
 composer run prepare-for-pantheon
-terminus -n build:env:create "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes
 
 if [[ $CI_BRANCH != $DEFAULT_BRANCH ]]
 then
