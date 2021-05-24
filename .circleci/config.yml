@@ -256,11 +256,11 @@ workflows:
     jobs:
       - configure_env_vars
       # - static_tests
-      - build_php
+      # - build_php
       - deploy_to_pantheon:
           requires:
             # - static_tests
-            - build_php
+            # - build_php
       - visual_regression_test:
           requires:
             - configure_env_vars
