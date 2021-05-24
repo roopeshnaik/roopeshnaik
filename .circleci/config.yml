@@ -123,7 +123,7 @@ jobs:
 
       - run:
           name: run PHP build step
-          command: ./.ci/build/php
+          command: chmod +x ./.ci/build/php
 
       - save_cache:
           key: vendor-{{ checksum "composer.lock" }}
