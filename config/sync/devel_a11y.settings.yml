@@ -1,0 +1,9 @@
+aural:
+  announce:
+    log: true
+keyboard:
+  tabbingmanager:
+    log: true
+    visualize: true
+_core:
+  default_config_hash: aKy9MDGABFMxTQUf9DG91PqtQbbQY1fqgxTgi2krMx8
