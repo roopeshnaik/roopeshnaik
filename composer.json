@@ -17,6 +17,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^4.1",
         "drupal/devel_a11y": "^1.1",
+        "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^8.4.5",
