@@ -17,6 +17,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^4.1",
         "drupal/devel_a11y": "^1.1",
+        "drupal/xmlsitemap": "^1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^8.4.5",
         "pantheon-systems/drupal-integrations": "^8",
