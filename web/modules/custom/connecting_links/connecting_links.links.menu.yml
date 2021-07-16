@@ -1,0 +1,8 @@
+
+# Connecting links menu items definition
+entity.connecting_links.collection:
+  title: 'Connecting links'
+  route_name: entity.connecting_links.collection
+  description: 'List Connecting links (bundles)'
+  parent: system.admin_structure
+  weight: 99

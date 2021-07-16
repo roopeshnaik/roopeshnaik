@@ -13,6 +13,7 @@
         "php": ">=7.3",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^4.1",
@@ -22,7 +23,12 @@
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^8.4.5",
         "pantheon-systems/drupal-integrations": "^8",
-        "pantheon-systems/quicksilver-pushback": "^2"
+        "pantheon-systems/quicksilver-pushback": "^2",
+        "symfony/config": "3.4.40",
+        "symfony/dom-crawler": "3.4.40",
+        "symfony/filesystem": "3.4.40",
+        "symfony/finder": "3.4.44",
+        "webflo/drupal-finder": "^1.2"
     },
     "require-dev": {
         "behat/behat": "^3.1",

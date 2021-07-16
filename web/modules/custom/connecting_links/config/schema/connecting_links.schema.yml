@@ -1,0 +1,12 @@
+connecting_links.connecting_links.*:
+  type: config_entity
+  label: 'Connecting links config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

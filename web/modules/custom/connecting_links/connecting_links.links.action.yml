@@ -1,0 +1,5 @@
+entity.connecting_links.add_form:
+  route_name: entity.connecting_links.add_form
+  title: 'Add Connecting links'
+  appears_on:
+    - entity.connecting_links.collection
