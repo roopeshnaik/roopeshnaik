@@ -85,12 +85,6 @@
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
             "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
         },
-        "build-env": {
-            "install-cms": [
-                "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
-            ],
-            "export-configuration": "drush config-export --yes"
-        },
         "drupal-scaffold": {
             "allowed-packages": [
                 "pantheon-systems/drupal-integrations"
@@ -100,6 +94,11 @@
             },
             "file-mapping": {
                 "[project-root]/.editorconfig": false
+            }
+        },
+        "patches": {
+            "drupal/core": {
+                "Add a hook to modify oEmbed resource data - 3042423": "https://www.drupal.org/files/issues/2022-01-05/3042423-52.patch"
             }
         }
     },
