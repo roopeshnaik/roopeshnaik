@@ -1,3 +1,9 @@
+all:
+  - language_interface
+  - language_content
+  - language_url
+configurable:
+  - language_interface
 negotiation:
   language_content:
     enabled:
@@ -8,9 +14,3 @@ negotiation:
       language-url-fallback: 1
   language_interface:
     enabled: {  }
-configurable:
-  - language_interface
-all:
-  - language_interface
-  - language_content
-  - language_url
