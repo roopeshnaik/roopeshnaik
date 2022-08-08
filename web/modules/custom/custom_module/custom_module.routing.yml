@@ -1,0 +1,23 @@
+custom_module.example:
+  path: '/custom-module/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\custom_module\Controller\CustomModuleController::build'
+  requirements:
+    _permission: 'access content'
+
+custom_module.settings_form:
+  path: '/admin/config/system/custom-module'
+  defaults:
+    _title: 'custom module settings'
+    _form: 'Drupal\custom_module\Form\SettingsForm'
+  requirements:
+    _permission: 'administer custom_module configuration'
+
+custom_module.ajax:
+  path: '/custom-module/ajax'
+  defaults:
+    _title: 'Ajax'
+    _form: 'Drupal\custom_module\Form\AjaxForm'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+custom_module.settings_form:
+  title: custom module
+  description: Configure custom module.
+  parent: system.admin_config_system
+  route_name: custom_module.settings_form
+  weight: 10
