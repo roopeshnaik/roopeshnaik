@@ -63,7 +63,7 @@ class AjaxForm extends ConfigFormBase {
       '#type' => 'submit',
       '#name' => 'add',
       '#value' => $this->t('Add row'),
-      '#submit' => [ [$this, 'addRows'] ],
+      '#submit' => [ [$this, 'addRow'] ],
       '#ajax' => [
         'callback' => [ $this, 'ajaxCallback' ],
         'wrapper' => 'rows__replace',
