@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eo pipefail
-
+composer self-update --2
 #
 # This script runs static tests which
 # can be performed without code execution.
