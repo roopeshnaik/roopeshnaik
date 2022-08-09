@@ -19,6 +19,7 @@
         "drupal/devel": "^4.1",
         "drupal/devel_a11y": "^1.1",
         "drupal/linkit": "^6.0@beta",
+        "drupal/search_api_pantheon": "^8.0",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "^10.0.0",
