@@ -1,4 +1,5 @@
 # https://circleci.com/docs/2.0/workflows/#using-workspaces-to-share-data-among-jobs
+version: 2.1
 defaults: &defaults
   docker:
     - image: quay.io/pantheon-public/build-tools-ci:6.x
